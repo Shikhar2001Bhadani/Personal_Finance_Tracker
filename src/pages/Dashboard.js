@@ -130,7 +130,7 @@ function Dashboard() {
             showExpenseModal={showExpenseModal}
             showIncomeModal={showIncomeModal}
           />
-          {transactions.length != 0 ? (
+          {transactions.length !== 0 ? (
             <ChartComponent sortedTransactions={sortedTranscations} />
           ) : (
             <NoTransactions />
