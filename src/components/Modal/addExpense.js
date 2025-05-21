@@ -18,6 +18,7 @@ function AddExpenseModal({ isExpenseModalVisible, handleExpenseCancel, onFinish 
         onFinish={(values) => {
           onFinish(values, "expense");
           form.resetFields();
+          handleExpenseCancel();
         }}
       >
         <Form.Item
